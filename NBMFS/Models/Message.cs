@@ -31,7 +31,7 @@ namespace NBMFS.Models
             ID = id;
             Sender = sender;
             if(!IsValidSender())
-                throw new Exception($"Invalid Sender: {Sender}");
+                throw new Exception($"Invalid Sender: {Sender}\nMust be at start of body and be compatible with message type.");
             Body = body;
             MaxSize = maxSize;
             if(Body.Length > MaxSize)
