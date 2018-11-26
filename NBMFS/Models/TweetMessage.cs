@@ -27,7 +27,7 @@ namespace NBMFS.Models
 
         public TweetMessage(string id, string sender, string body)
             : base(id, sender, body, 140, MessageType.TWEET)
-        {
+        {      
             Mentions = new List<Mentions>();
             Hashtags = new List<Hashtags>();
             ParseTweet();
@@ -76,7 +76,7 @@ namespace NBMFS.Models
 
         public override bool IsValidSender()
         {
-            if (Sender.StartsWith("@") && Sender.Length <= 16)
+            if (Sender.StartsWith("@") && Sender.Length <= 16 && Sender.Length > 1)
                 return true;
 
             return false;

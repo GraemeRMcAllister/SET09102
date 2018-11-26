@@ -53,6 +53,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailMessageTest.Constructor.g.cs">
+      <DependentUpon>EmailMessageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailMessageTest.cs" />
     <Compile Include="Factories\MainWindowFactory.cs" />
     <Compile Include="MessageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +65,14 @@
       <DependentUpon>SIREmailTest.cs</DependentUpon>
     </Compile>
     <Compile Include="SIREmailTest.cs" />
+    <Compile Include="SmsMessageTest.Constructor.g.cs">
+      <DependentUpon>SmsMessageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmsMessageTest.cs" />
+    <Compile Include="TweetMessageTest.Constructor.g.cs">
+      <DependentUpon>TweetMessageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TweetMessageTest.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">

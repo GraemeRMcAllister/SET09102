@@ -81,9 +81,9 @@ namespace NBMFS
 
             try
             {
-                index = txtMessageBody.Text.IndexOf(' ');
-                txtSender = txtMessageBody.Text.Substring(0, index);
-                txtBody = txtMessageBody.Text.Substring(index + 1, txtMessageBody.Text.Length - index - 1);
+                int cindex = txtMessageBody.Text.IndexOf(' ');
+                txtSender = txtMessageBody.Text.Substring(0, cindex);
+                txtBody = txtMessageBody.Text.Substring(cindex + 1, txtMessageBody.Text.Length - cindex - 1);
             }
             catch
             {

@@ -83,10 +83,12 @@ namespace NBMFS
 
         private void BtnNext_Click(object sender, RoutedEventArgs e)
         {
+            if(os.Count == 0)
+                return;
 
             if (index >= os.Count - 1)
                 index = os.Count - 1;
-            else if (os.Count == 0)
+            else if (os.Count <= 0 || index < 0)
                 index = 0;
             else
                 index++;
