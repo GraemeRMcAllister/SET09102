@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NBMFS.Models.EmailMessage">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAEAIQAAAAAAAEAAAAQKAAAAAAAAAA=</HashCode>
+      <FileName>Models\EmailMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.Hashtags">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Hashtags.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.Incidents">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Incidents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.Mentions">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Mentions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.Message">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAQQBAABEAAEAAAAAIwAAAAAIAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.MessageValidation">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\MessageValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.ReadCSV">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAIAAAAAAAAAAAAAAAAFAAAAAAA=</HashCode>
+      <FileName>Models\ReadCSV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.RegexValid">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAEAAAAAAAABAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Regex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.SIREmail">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACAAAAAEAAAAAAAAAAEAAAAAAAAAQCIAAAA=</HashCode>
+      <FileName>Models\SIREmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.SmsMessage">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAQAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SmsMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.TextSpeak">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TextSpeak.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.TextSpeakMessage">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TextSpeakMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.Models.TweetMessage">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAIEAAQQAAABAAEAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\TweetMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NBMFS.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABRBAAAEBAEACAABBgAQAEAAAEEACAAAEAAhgBAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="NBMFS.Models.MessageType" Collapsed="true">
+    <Position X="14.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAQAAAAAAIAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="NBMFS.ClosedList"
+        Closing="Window_Closing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NBMFS"
+        mc:Ignorable="d"
+        Title="ClosedList" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblSIRListClosed" Content="SIR List:" HorizontalAlignment="Left" Height="28" Margin="10,0,0,0" VerticalAlignment="Top" Width="55"/>
+        <ListBox x:Name="lstSIRListClosed" HorizontalAlignment="Left" Height="169" Margin="10,28,0,0" VerticalAlignment="Top" Width="772"/>
+        <Label x:Name="lblMensitonsListClosed" Content="Mentions:" HorizontalAlignment="Left" Height="33" Margin="10,202,0,0" VerticalAlignment="Top" Width="68"/>
+        <ListBox x:Name="lstMentionsListClosed" HorizontalAlignment="Left" Height="197" Margin="80,212,0,0" VerticalAlignment="Top" Width="305"/>
+        <ListBox x:Name="lstHashtagsListClosed" HorizontalAlignment="Left" Height="197" Margin="477,212,0,0" VerticalAlignment="Top" Width="305"/>
+        <Label x:Name="lblMensitonsListClosed_Copy" Content="Hashtags:" HorizontalAlignment="Left" Height="33" Margin="404,202,0,0" VerticalAlignment="Top" Width="68"/>
+
+    </Grid>
+</Window>
