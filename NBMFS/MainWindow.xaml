@@ -26,7 +26,7 @@
         <Button x:Name="btnNext" Content="▶" HorizontalAlignment="Left" Height="26" Margin="218,297,0,0" VerticalAlignment="Top" Width="19" Click="BtnNext_Click"/>
         <Button x:Name="btnPrevious" Content="◀" HorizontalAlignment="Left" Height="26" Margin="98,297,0,0" VerticalAlignment="Top" Width="19" Click="BtnPrevious_Click"/>
         <Label x:Name="lblMessageslist_Copy" Content="Message List:" Height="28" Margin="425,43,257,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblQuarantinedURLs" Content="Quarantined URLs:" Height="28" Margin="425,201,257,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQuarantinedURLs" Content="Quarantined URLs:" Height="28" Margin="415,201,246,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstQuarantined" HorizontalAlignment="Left" Height="71" Margin="542,205,0,0" VerticalAlignment="Top" Width="230" SelectionChanged="lstMessages_SelectionChanged"/>
     </Grid>
 </Window>

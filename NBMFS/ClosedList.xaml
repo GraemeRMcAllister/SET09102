@@ -13,7 +13,8 @@
         <Label x:Name="lblMensitonsListClosed" Content="Mentions:" HorizontalAlignment="Left" Height="33" Margin="10,202,0,0" VerticalAlignment="Top" Width="68"/>
         <ListBox x:Name="lstMentionsListClosed" HorizontalAlignment="Left" Height="197" Margin="80,212,0,0" VerticalAlignment="Top" Width="305"/>
         <ListBox x:Name="lstHashtagsListClosed" HorizontalAlignment="Left" Height="197" Margin="477,212,0,0" VerticalAlignment="Top" Width="305"/>
-        <Label x:Name="lblMensitonsListClosed_Copy" Content="Hashtags:" HorizontalAlignment="Left" Height="33" Margin="404,202,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="lblMensitonsListClosed_Copy" Content="Trending
+               :" HorizontalAlignment="Left" Height="33" Margin="404,202,0,0" VerticalAlignment="Top" Width="68"/>
 
     </Grid>
 </Window>
