@@ -20,35 +20,35 @@ namespace NBMFS
     /// </summary>
     public partial class MainWindow : Window
     {
-        private void ProcessMessage()
+        private void ProcessMessage() // called from read
         {
             try
             {
-                MessageValidation.ValidateHeader(txtMessageHeader.Text);
-                Message m = ParseMessage();
+                MessageValidation.ValidateHeader(txtMessageHeader.Text); // Validate Header
+                Message m = ParseMessage(); // parsing messege = as this is in a try statement, should it fail, it will returh the exception and the message to this try's catch
 
                 if (m is null)
-                    throw new Exception("No Message");
+                    throw new Exception("No Message"); // if parsing message was unsuccessful go no further
 
-                m.ToJson();
-                os.Add(m);
-                UpdateGlobalMessageList();
+                m.ToJson(); // writing message to jsonfile
+                os.Add(m); // adding message to main list
+                UpdateGlobalMessageList(); // adding message to message list box
 
-                if(m is EmailMessage)
+                if(m is EmailMessage) 
                 {
                     EmailMessage em = m as EmailMessage;
-                    UpdateURLList(em);
+                    UpdateURLList(em); // if message is email message, cast as such and add it's qurantined links to URL list
                 }
 
                 if (m is SIREmail)
-                    UpdateSIRList();
+                    UpdateSIRList(); // if Message is an incident report, add the details to a SIR list
 
                 if (m is TweetMessage)
                 {
                     TweetMessage tm = m as TweetMessage;
                     MasterHashtags = tm.HashTagCount(MasterHashtags);
                     MasterMentions = tm.MentionsCount(MasterMentions);
-                    Refresh();
+                    Refresh(); // if message is tweet = add its hashtags/mentions to master list(if they exist increase count) refresh trending and mentions list
                 }
 
                 MessageBox.Show("Message Added");
@@ -64,11 +64,11 @@ namespace NBMFS
         {
             foreach(string link in m.Links)
             {
-                lstQuarantined.Items.Add(link);
+                lstQuarantined.Items.Add(link); // for all the quarantined links in the email message, add it to the quarantine list
             }
         }
 
-        private Message ParseMessage()
+        private Message ParseMessage() // breaks down the strig parameters and passes them as new object parameters, validation for the classes is in the class constructor
         {
             string txtSender = "";
             string txtBody = "";
@@ -77,7 +77,7 @@ namespace NBMFS
 
             foreach (Message m in os)
                 if (id == m.ID)
-                    throw new Exception("Duplicate ID");
+                    throw new Exception("Duplicate ID"); // making sure ID does not exist
 
             try
             {

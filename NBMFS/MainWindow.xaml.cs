@@ -14,10 +14,10 @@ namespace NBMFS
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<Hashtags> MasterHashtags = new List<Hashtags>();
-        private List<Mentions> MasterMentions = new List<Mentions>();
-        public List<Message> os = new List<Message>();
-        private int index = 0;
+        private List<Hashtags> MasterHashtags = new List<Hashtags>(); //List of Master Hashtags - used to form trending list
+        private List<Mentions> MasterMentions = new List<Mentions>(); //List of Master Mentions
+        public List<Message> os = new List<Message>();                  //mainwindow Message list - where loaded and read messages are kept
+        private int index = 0; // index int for previous and next buttons
 
         public MainWindow()
         {
@@ -26,37 +26,24 @@ namespace NBMFS
 
         private void btnRead_Click(object sender, RoutedEventArgs e)
         {
-            ProcessMessage();
+            ProcessMessage(); // master process message
         }
 
-        void txtMessageBodyEnterClicked(object sender, KeyEventArgs e)
+        void txtMessageBodyEnterClicked(object sender, KeyEventArgs e) // on enter; do read
         {
             if (e.Key == Key.Return)
             {
-                ProcessMessage();
+                ProcessMessage(); // master process message
                 e.Handled = true;
             }
         }
 
 
-        private void btnPaste_Click(object sender, RoutedEventArgs e)
+        private void btnLoad_Click(object sender, RoutedEventArgs e) // loading file
         {
             try
             {
-                ReadPaste();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        private void btnLoad_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                LoadJSON();
+                LoadJSON(); // Loading a JSon File list, this will throw for anything but a valid message
             }
             catch (Exception ex)
             {
@@ -65,8 +52,7 @@ namespace NBMFS
         }
 
 
-
-        private void BtnPrevious_Click(object sender, RoutedEventArgs e)
+        private void BtnPrevious_Click(object sender, RoutedEventArgs e) // code for navigating master messages
         {
             if (os.Count == 0)
                 return;
@@ -81,7 +67,7 @@ namespace NBMFS
             
         }
 
-        private void BtnNext_Click(object sender, RoutedEventArgs e)
+        private void BtnNext_Click(object sender, RoutedEventArgs e) // code for navigating master messages
         {
             if(os.Count == 0)
                 return;
