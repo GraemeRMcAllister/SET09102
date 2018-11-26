@@ -15,7 +15,7 @@ namespace NBMFS.Models
 
         }
 
-        internal string  ConvertTextspeak()
+        internal string ConvertTextspeak()
         {
             string[] words = Body.Split(' ');
             string newbody = string.Empty;

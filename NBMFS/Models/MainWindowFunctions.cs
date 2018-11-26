@@ -34,6 +34,12 @@ namespace NBMFS
                 os.Add(m);
                 UpdateGlobalMessageList();
 
+                if(m is EmailMessage)
+                {
+                    EmailMessage em = m as EmailMessage;
+                    UpdateURLList(em);
+                }
+
                 if (m is SIREmail)
                     UpdateSIRList();
 
@@ -51,6 +57,14 @@ namespace NBMFS
             {
                 MessageBox.Show(ex.Message, "Message Not Added");
                 return;
+            }
+        }
+
+        private void UpdateURLList(EmailMessage m)
+        {
+            foreach(string link in m.Links)
+            {
+                lstQuarantined.Items.Add(link);
             }
         }
 

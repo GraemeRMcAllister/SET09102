@@ -8,7 +8,6 @@
         mc:Ignorable="d"
         Title="NBMFS" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-
         <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Height="66" Margin="288,336,0,0" VerticalAlignment="Top" Width="260" Background="{x:Null}" Click="btnLoad_Click"/>
         <Button x:Name="btnRead" Content="Read" HorizontalAlignment="Left" Height="66" Margin="10,336,0,0" VerticalAlignment="Top" Width="260" Background="{x:Null}" FontFamily="Gothic" Click="btnRead_Click"/>
         <TextBox x:Name="txtMessageHeader" HorizontalAlignment="Left" Height="27" Margin="10,38,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="400" MaxLength="10"/>
@@ -21,20 +20,13 @@
         <Label x:Name="lblBody" Content="Body" HorizontalAlignment="Left" Height="29" Margin="10,70,0,0" VerticalAlignment="Top" Width="49"/>
         <Label x:Name="lblHeader" Content="Header" HorizontalAlignment="Left" Height="29" Margin="10,9,0,0" VerticalAlignment="Top" Width="67"/>
         <ListBox x:Name="lstSIR" HorizontalAlignment="Left" Height="75" Margin="553,336,0,0" VerticalAlignment="Top" Width="231" SelectionChanged="lstSIR_SelectionChanged" Visibility="Hidden"/>
-        <ListBox x:Name="lstMessages" HorizontalAlignment="Left" Height="198" Margin="425,70,0,0" VerticalAlignment="Top" Width="348" SelectionChanged="lstMessages_SelectionChanged" RenderTransformOrigin="0.5,0.5">
-            <ListBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.43"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="0.559"/>
-                </TransformGroup>
-            </ListBox.RenderTransform>
-        </ListBox>
+        <ListBox x:Name="lstMessages" HorizontalAlignment="Left" Height="126" Margin="425,70,0,0" VerticalAlignment="Top" Width="348" SelectionChanged="lstMessages_SelectionChanged"/>
         <Label x:Name="lblMessageslist" Content="Message List" Height="28" Margin="122,297,581,0" VerticalAlignment="Top"/>
         <Label x:Name="lblTitle" Content="Napier Bank Message Filtering Service" Height="28" Margin="288,10,40.4,0" VerticalAlignment="Top"/>
         <Button x:Name="btnNext" Content="▶" HorizontalAlignment="Left" Height="26" Margin="218,297,0,0" VerticalAlignment="Top" Width="19" Click="BtnNext_Click"/>
         <Button x:Name="btnPrevious" Content="◀" HorizontalAlignment="Left" Height="26" Margin="98,297,0,0" VerticalAlignment="Top" Width="19" Click="BtnPrevious_Click"/>
         <Label x:Name="lblMessageslist_Copy" Content="Message List:" Height="28" Margin="425,43,257,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQuarantinedURLs" Content="Quarantined URLs:" Height="28" Margin="425,201,257,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstQuarantined" HorizontalAlignment="Left" Height="71" Margin="542,205,0,0" VerticalAlignment="Top" Width="230" SelectionChanged="lstMessages_SelectionChanged"/>
     </Grid>
 </Window>
